@@ -464,8 +464,8 @@ _EIC_INIT_wait_sync
 
 
 ;========================== Init NVIC =========================;
-EIC_irq				EQU BIT_POS_4
-EIC_pri				EQU (0xc0 & NVIC_PRI_Mask) << NVIC_PRI0_Pos
+EIC_irq   EQU BIT_POS_4
+EIC_pri   EQU (0xc0 & NVIC_PRI_Mask) << NVIC_PRI0_Pos
 
   LDR tmpa, =NVICISER_SETENA
   LDR tmpd, =EIC_irq
